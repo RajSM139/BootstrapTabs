@@ -1,0 +1,67 @@
+body{
+	margin: 0;
+	padding:0px;
+}
+.space{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.nav-tabs1 {
+    border-bottom: 2px solid #DDD;
+}
+.nav-tabs1 > li.active > a,
+.nav-tabs1 > li.active > a:focus,
+.nav-tabs1 > li.active > a:hover {
+    border-width: 0;
+}
+.nav-tabs1 > li > a {
+    border: none;
+    color: #666;
+}
+.nav-tabs1 > li.active > a,
+.nav-tabs1 > li > a:hover {
+    border: none;
+    color: #4285F4 !important;
+    background: transparent;
+}
+.nav-tabs1 > li > a::after {
+    content: "";
+    background: #4285F4;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -1px;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+}
+.nav-tabs1 > li.active > a::after,
+.nav-tabs1 > li:hover > a::after {
+    transform: scale(1);
+}
+
+.nav-tabs2 > li.active > a,
+.nav-tabs2 > li.active > a:focus,
+
+.nav-tabs2 > li > a {
+    border: none;
+    color: #666;
+}
+.nav-tabs2 > li.active > a,
+.nav-tabs2 > li > a:hover {
+    border: none;
+    color: #4285F4 !important;
+    background: transparent;
+}
+.nav-tabs2 > li > a::after {
+    content: "";
+    background: #4285F4;
+    position: absolute;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+}
+.nav-tabs2 > li.active > a::after,
+.nav-tabs1 > li:hover > a::after {
+    transform: scale(1);
+}
